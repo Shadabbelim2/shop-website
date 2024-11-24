@@ -1,0 +1,64 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <h1>ShopNow</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search products...">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to reach out to us using the form below.</p>
+
+            <form id="contact" method="POST" class="contact-form">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn-secondary">Submit</button>
+            </form>
+
+            <div id="response-message"></div> <!-- Response message will appear here -->
+        </div>
+    </section>
+
+    <footer class="flex-all-center">
+        <p>© 2024 ShopNow. All Rights Reserved.</p>
+      </footer>
+</body>
+</html>
